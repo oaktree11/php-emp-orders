@@ -19,7 +19,7 @@ app.run(function ($rootScope) {
 				var msg = 'row selected ' + row.isSelected;
 					console.log(msg);
                                         console.log(row.entity);
-				var responsePromise = $http.get("http://localhost:8089/php/server/orders.php");
+				var responsePromise = $http.get("http://localhost/server-side/orders.php");
 
    		                responsePromise.success(function(data, status, headers, config) {
 		                    $scope.myData.fromServer = data;
@@ -47,7 +47,7 @@ app.run(function ($rootScope) {
 }];
             $scope.myData.doClick = function(item, event) {
 
-                var responsePromise = $http.get("http://localhost:8089/php/server/employee.php");
+                var responsePromise = $http.get("http://localhost/server-side/employee.php");
 
                 responsePromise.success(function(data, status, headers, config) {
                     $scope.myData.fromServer = data;
