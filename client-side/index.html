@@ -1,0 +1,38 @@
+ <!doctype html>
+<html ng-app="myapp">
+<head>
+
+
+     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular-touch.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular-animate.js"></script>
+    <script src="http://ui-grid.info/docs/grunt-scripts/csv.js"></script>
+    <script src="http://ui-grid.info/docs/grunt-scripts/pdfmake.js"></script>
+    <script src="http://ui-grid.info/docs/grunt-scripts/vfs_fonts.js"></script>
+    <script src="http://ui-grid.info/release/ui-grid-unstable.js"></script>
+<script src="ctrl.js"></script> 
+    <link rel="stylesheet" href="http://ui-grid.info/release/ui-grid-unstable.css" type="text/css">
+    <link rel="stylesheet" href="main.css" type="text/css">
+
+</head>
+
+<body >
+<div id="graph">
+</div>
+ 
+
+  <div ng-controller="MyController" >
+    <button ng-click="myData.doClick(item, $event)">Get Employee data</button>
+   
+ <div id="grid2"  ui-grid="gridOptions"  ui-grid-selection ui-grid-resize-columns ui-grid-move-columns class="grid"></div>
+  </div>
+   
+<div ng-controller="MyController1" >
+      <div class="panel-heading">Orders</div>
+   
+ <div id="grid1"  ui-grid="gridOptions1"  ui-grid-selection ui-grid-resize-columns ui-grid-move-columns class="grid1"></div>
+  </div>
+ 
+
+</body>
+</html>

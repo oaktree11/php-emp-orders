@@ -1,0 +1,18 @@
+    .grid {
+    width: 1000px;
+    height: 250px;
+    }
+ .grid1 {
+    width: 1000px;
+    height: 250px;
+    }
+ .grid2 {
+    width: 1000px;
+    height: 250px;
+    }
+
+.panel-heading {
+    text-align: center;
+    color: Blue;
+    font-size: 30px;
+} 
